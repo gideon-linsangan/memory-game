@@ -1,0 +1,15 @@
+<div class="game-board">
+  @for (card of cards(); track card.id; let index = $index) {
+    <div 
+      class="card" 
+      (click)="flipCard(index)" 
+      [class.flipped]="card.flipped"
+    >
+      @if (card.flipped) {
+        <span>{{ card.value }}</span>
+      } @else {
+        <span>❓</span>
+      }
+    </div>
+  }
+</div>
