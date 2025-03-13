@@ -1,0 +1,22 @@
+.restart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; // Ensures vertical centering too
+  width: 100%; // Ensures full width for centering
+  margin-top: 20px;
+}
+
+.restart-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: #c0392b;
+  }
+}
